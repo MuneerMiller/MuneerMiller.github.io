@@ -146,3 +146,148 @@ footer a:not(.nav-link) {
   margin-right: 8px;
   color: #4A90E2;
 }
+
+/* Theme toggle switch styles */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 15px;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4A90E2;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Dark theme variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #2C3E50;
+  --card-bg: #f5f7fa;
+  --header-bg: #E6E9ED;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #f8f9fa;
+  --card-bg: #2d2d2d;
+  --header-bg: #121212;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.bg-white {
+  background-color: var(--card-bg) !important;
+}
+
+.bg-light {
+  background-color: var(--header-bg) !important;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-card {
+  margin-bottom: 30px;
+  position: relative;
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.timeline-body {
+  padding: 15px 0;
+}
+
+.timeline-head {
+  margin-bottom: 10px;
+}
+
+.timeline-head .h5 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.timeline-head .text-muted {
+  font-size: 0.9rem;
+}
+
+/* Skills Section - Theme-Aware */
+.skills-section h2 {
+  color: var(--primary-color);
+}
+
+.skills-section h4 {
+  color: var(--text-color);
+}
+
+.skills-section ul li {
+  color: var(--text-color);
+}
+
+/* Better icon colors for dark mode */
+.skills-section ul li i.text-success {
+  color: var(--skill-icon-color, #28a745) !important; /* Green for backend */
+}
+
+.skills-section ul li i.text-info {
+  color: var(--skill-icon-color, #17a2b8) !important; /* Blue for frontend */
+}
+
+/* Add these to your :root and dark theme variables */
+:root {
+  --primary-color: #4A90E2; /* Blue */
+  --skill-icon-color: #4A90E2; /* Default icon color */
+}
+
+[data-theme="dark"] {
+  --primary-color: #6eb6ff; /* Lighter blue for better contrast */
+  --skill-icon-color: #5dd39e; /* Teal-green for better visibility */
+}
