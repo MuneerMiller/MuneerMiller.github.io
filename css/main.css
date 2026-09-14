@@ -259,6 +259,76 @@ body {
   font-size: 0.9rem;
 }
 
+@media (max-width: 575.98px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  header .pt-4 {
+    padding-top: 1rem !important;
+  }
+
+  .site-title {
+    font-size: 1.25rem;
+  }
+
+  header .nav {
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+  }
+
+  header .nav-item + .nav-item {
+    margin-left: 0.75rem;
+  }
+
+  .cover {
+    height: auto;
+    min-height: 500px;
+  }
+
+  .cover .text-center {
+    padding: 2rem 1rem !important;
+  }
+
+  .header-bio h2 {
+    font-size: 1.75rem;
+  }
+
+  .header-bio p {
+    font-size: 0.9rem;
+  }
+
+  .header-bio .btn {
+    display: block;
+    width: 100%;
+    margin-right: 0 !important;
+  }
+
+  .shadow-1-strong.my-5 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .shadow-1-strong.p-5,
+  #skills {
+    padding: 1.5rem !important;
+  }
+
+  .portfolio-section .text-end {
+    text-align: left !important;
+  }
+
+  .portfolio-section h3 {
+    font-size: 1.35rem;
+  }
+}
+
 /* Skills Section - Theme-Aware */
 .skills-section h2 {
   color: var(--primary-color);

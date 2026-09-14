@@ -18,8 +18,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const themeToggle = document.getElementById('theme-toggle');
 
 // 1. Check for saved user preference or use system preference
-const currentTheme = localStorage.getItem('theme') || 
-                    window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const savedTheme = localStorage.getItem('theme');
+const currentTheme = savedTheme ||
+                    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
 // 2. Apply the initial theme
 if (currentTheme === 'dark') {
@@ -39,9 +40,18 @@ themeToggle.addEventListener('change', function() {
 });
 
 // 4. Watch for system theme changes
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+const handleSystemThemeChange = e => {
+  if (localStorage.getItem('theme')) {
+    return;
+  }
   const newTheme = e.matches ? 'dark' : 'light';
   document.documentElement.setAttribute('data-theme', newTheme);
   themeToggle.checked = (newTheme === 'dark');
-  localStorage.setItem('theme', newTheme);
-});
+};
+
+if (systemTheme.addEventListener) {
+  systemTheme.addEventListener('change', handleSystemThemeChange);
+} else {
+  systemTheme.addListener(handleSystemThemeChange);
+}
