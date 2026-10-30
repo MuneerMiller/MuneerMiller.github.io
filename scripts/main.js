@@ -1,57 +1,55 @@
-// Animations
-AOS.init({
-  anchorPlacement: 'top-left',
-  duration: 1000
-});
-
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
-
-// ===== Dark/Light Mode Toggle =====
+// ===== Theme toggle =====
+const root = document.documentElement;
 const themeToggle = document.getElementById('theme-toggle');
+const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-// 1. Check for saved user preference or use system preference
-const savedTheme = localStorage.getItem('theme');
-const currentTheme = savedTheme ||
-                    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+const isDark = () => root.getAttribute('data-theme') === 'dark' ||
+  (!root.hasAttribute('data-theme') && systemDark.matches);
 
-// 2. Apply the initial theme
-if (currentTheme === 'dark') {
-  document.documentElement.setAttribute('data-theme', 'dark');
-  themeToggle.checked = true;
-}
-
-// 3. Toggle theme on button click
-themeToggle.addEventListener('change', function() {
-  if (this.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    document.documentElement.removeAttribute('data-theme');
-    localStorage.setItem('theme', 'light');
-  }
-});
-
-// 4. Watch for system theme changes
-const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
-const handleSystemThemeChange = e => {
-  if (localStorage.getItem('theme')) {
-    return;
-  }
-  const newTheme = e.matches ? 'dark' : 'light';
-  document.documentElement.setAttribute('data-theme', newTheme);
-  themeToggle.checked = (newTheme === 'dark');
+const syncToggleLabel = () => {
+  themeToggle.setAttribute('aria-label', isDark() ? 'Switch to light mode' : 'Switch to dark mode');
 };
 
-if (systemTheme.addEventListener) {
-  systemTheme.addEventListener('change', handleSystemThemeChange);
-} else {
-  systemTheme.addListener(handleSystemThemeChange);
+themeToggle.addEventListener('click', () => {
+  const next = isDark() ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  try { localStorage.setItem('theme', next); } catch (e) {}
+  syncToggleLabel();
+});
+
+systemDark.addEventListener?.('change', syncToggleLabel);
+syncToggleLabel();
+
+// ===== Reveal sections on scroll =====
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if ('IntersectionObserver' in window && !reduceMotion) {
+  root.classList.add('js-reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
+
+// ===== Highlight the current section in the nav =====
+const navLinks = [...document.querySelectorAll('.site-nav a')];
+const sections = navLinks.map(link => document.querySelector(link.getAttribute('href')));
+
+if ('IntersectionObserver' in window) {
+  const navObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+      });
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  sections.forEach(section => section && navObserver.observe(section));
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();

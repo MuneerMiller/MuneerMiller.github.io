@@ -1,431 +1,361 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-ZA">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mogamat Muneer Miller CV</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;400;500;700&display=swap" media="print" onload="this.media='all'" />
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;400;500;700&display=swap" />
-    </noscript>
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/main.css?ver=1.2.1" rel="stylesheet">
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-      </style>
-    </noscript>
+    <title>Mogamat Muneer Miller | IT Support &amp; Software Developer</title>
+    <meta name="description" content="CV of Mogamat Muneer Miller, a Cape Town based IT technician and software developer working across Microsoft 365, Google Workspace, Power BI, Python, Java and JavaScript.">
+    <meta name="author" content="Mogamat Muneer Miller">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Mogamat Muneer Miller | IT Support &amp; Software Developer">
+    <meta property="og:description" content="IT technician and software developer based in Cape Town, South Africa.">
+    <meta property="og:image" content="https://muneermiller.github.io/images/Profile_Pic.jpg">
+    <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#121614" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='600' fill='white' text-anchor='middle'%3EMM%3C/text%3E%3C/svg%3E">
+
+    <!-- Apply saved theme before paint to avoid a flash -->
+    <script>
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
+    <link href="css/font-awesome/css/all.min.css?ver=2.0.0" rel="stylesheet">
+    <link href="css/main.css?ver=2.0.0" rel="stylesheet">
   </head>
-  <body class="bg-light" id="top">
-    <header class="d-print-none">
-      <div class="container text-center text-lg-left">
-        <div class="pt-4 clearfix">
-          <h1 class="site-title mb-0">Mogamat Muneer Miller</h1>
-          <div class="site-nav">
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <!-- ADD DARK MODE TOGGLE HERE -->
-          <div class="theme-switch-wrapper d-print-none" style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 10px;">
-            <label class="theme-switch" for="theme-toggle">
-              <input type="checkbox" id="theme-toggle">
-              <span class="slider round"></span>
-            </label>
-            <span class="theme-label">Dark Mode</span>
-          </div>
-        </div>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Back to top">
+          <span class="brand-mark">MM</span>
+          <span class="brand-name">Muneer Miller</span>
+        </a>
+        <nav class="site-nav" aria-label="Sections">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+          <i class="fas fa-sun" aria-hidden="true"></i>
+        </button>
       </div>
     </header>
 
-    <div class="page-content">
-      <div class="container">
-        <div class="resume-container">
-          <!-- Introduction Section -->
-          <div class="shadow-1-strong bg-white my-5" id="intro">
-            <div class="bg-info text-white">
-              <div class="cover bg-image">
-                <img src="images/back.jpeg" alt="Background Image" />
-                <div class="mask" style="background-color: rgba(0, 0, 0, 0.7); backdrop-filter: blur(2px);">
-                  <div class="text-center p-5">
-                    <div class="avatar p-1">
-                      <img class="img-thumbnail shadow-2-strong" src="images/Profile_Pic.jpg" width="160" height="160" alt="Profile Picture" />
-                    </div>
-                    <div class="header-bio mt-3">
-                      <div data-aos="zoom-in">
-                        <h2 class="h1">Mogamat Muneer Miller</h2>
-                        <p>Technology Professional | Software Development | Technical Support</p>
-                      </div>
-                      <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
-                        <nav role="navigation">
-                          <ul class="nav justify-content-center">
-                            <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/MuneerMiller"><i class="fab fa-github"></i></a></li>
-                            <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/muneer-miller"><i class="fab fa-linkedin"></i></a></li>
-                          </ul>
-                        </nav>
-                      </div>
-                      <div class="d-print-none">
-                        <a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3" href="Mogamat Muneer Miller CV.pdf" target="_blank" data-aos="fade-right" data-aos-delay="700">Download Resume</a>
-                        <a class="btn btn-info btn-lg shadow-sm mt-1" href="#contact" data-aos="fade-left" data-aos-delay="700">Hire Me</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Cape Town, South Africa</p>
+            <h1>Mogamat Muneer Miller</h1>
+            <p class="hero-role">IT Support Technician &amp; Software Developer</p>
+            <p class="hero-lede">I keep schools and businesses running on Microsoft 365, Google Workspace and their admin systems, and I build software and Power BI reports that make that work easier.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="Mogamat%20Muneer%20Miller%20CV.pdf" target="_blank" rel="noopener"><i class="fas fa-file-download" aria-hidden="true"></i> Download CV</a>
+              <a class="btn btn-ghost" href="#contact">Get in touch</a>
             </div>
+            <ul class="hero-social">
+              <li><a href="https://github.com/MuneerMiller" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/muneer-miller" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="mailto:muneermilleror@gmail.com" aria-label="Email"><i class="far fa-envelope" aria-hidden="true"></i></a></li>
+            </ul>
           </div>
-
-          <!-- About Section -->
-          <div class="shadow-1-strong bg-white my-5 p-5" id="about">
-            <div class="about-section">
-              <div class="row">
-                <div class="col-md-6">
-                  <h2 class="h2 fw-light mb-4">About Me</h2>
-                  <p>Highly motivated and adaptable technology professional with experience in software and web development, supported by a strong foundation in problem-solving, technical support, and customer assistance. Skilled in Python, Java, JavaScript, HTML, CSS, SQL, and backend development concepts, with a solid understanding of the Software Development Life Cycle (SDLC). Experienced in working with Microsoft 365, Active Directory, Microsoft Azure, and remote support tools within fast-paced environments, while applying strong troubleshooting and analytical skills to resolve technical issues efficiently.</p>
-                </div>
-                <div class="col-md-5 offset-lg-1">
-                  <div class="row mt-2">
-                    <h2 class="h2 fw-light mb-4">Bio</h2>
-                    <div class="col-sm-5">
-                      <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted"></i> Age</div>
-                    </div>
-                    <div class="col-sm-7 pb-2">24</div>
-                    <div class="col-sm-5">
-                      <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted"></i> Email</div>
-                    </div>
-                    <div class="col-sm-7 pb-2">muneermilleror@gmail.com</div>
-                    <div class="col-sm-5">
-                      <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted"></i> Phone</div>
-                    </div>
-                    <div class="col-sm-7 pb-2">+27 67 132 4695</div>
-                    <div class="col-sm-5">
-                      <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted"></i> Address</div>
-                    </div>
-                    <div class="col-sm-7 pb-2">Cape Town, Western Cape, South Africa</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="hero-photo">
+            <img src="images/Profile_Pic.jpg" width="899" height="989" alt="Portrait of Mogamat Muneer Miller">
           </div>
-          <!-- Skills Section -->
-          <div class="shadow-1-strong bg-white my-5 p-5 rounded-lg" id="skills">
-            <div class="skills-section">
-              <h2 class="h2 fw-bold mb-4 text-primary text-center">Technical Skills</h2>
-              <div class="row">
-                <div class="col-md-6">
-                  <h4 class="fw-bold"><i class="fas fa-server"></i> Backend Development</h4>
-                  <ul class="list-unstyled">
-                    <li><i class="fas fa-check-circle text-success"></i> JavaScript (Node.js, Express.js), Python and Java</li>
-                    <li><i class="fas fa-database text-success"></i> SQL, MySQL, PostgreSQL</li>
-                    <li><i class="fas fa-code text-success"></i> API Development & Integration</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <h4 class="fw-bold"><i class="fas fa-desktop"></i> Frontend Development</h4>
-                  <ul class="list-unstyled">
-                    <li><i class="fas fa-code text-info"></i> HTML and CSS</li>
-                    <li><i class="fab fa-react text-info"></i> React.js (Familiar)</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="mt-4 text-center">
-                <p class="text-muted">I have hands-on experience building efficient, scalable applications with a strong focus on backend development.</p>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- Experience Section -->
-          <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
-            <div class="work-experience-section">
-              <h2 class="h2 fw-light mb-4">Work Experience</h2>
-              <div class="timeline">
-                <!-- Junior Software Developer at Home Assist Technologies -->
-                <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-                  <div class="timeline-head px-4 pt-3">
-                    <div class="h5">Junior Software Developer<span class="text-muted h6"> at Home Assist Technologies</span></div>
-                  </div>
-                  <div class="timeline-body px-4 pb-4">
-                    <div class="text-muted text-small mb-3">June, 2022 - October, 2022</div>
-                    <ul>
-                      <li>Collaborated with cross-functional teams to identify and prioritize new feature development for web applications, resulting in a 20% increase in user engagement.</li>
-                      <li>Developed and implemented comprehensive software testing strategies, resulting in a large reduction in post-release bugs.</li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- Learning Specialist at 2U .inc -->
-                <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-                  <div class="timeline-head px-4 pt-3">
-                    <div class="h5">Learning Specialist<span class="text-muted h6"> at 2U .inc</span></div>
-                  </div>
-                  <div class="timeline-body px-4 pb-4">
-                    <div class="text-muted text-small mb-3">July, 2023 - October, 2024</div>
-                    <ul>
-                      <li>Provided remote tutoring in Full-Stack web development in node.js, React.js, SQL and MongoDB, assisting students with homework, class exercises, and projects.</li>
-                      <li>Guided students in problem-solving, delivering clear explanations and solutions to enhance understanding.</li>
-                      <li>Graded assignments promptly, maintaining a 24-48 hour turnaround.</li>
-                      <li>Supported boot camp students with technical skills and success strategies, fostering academic growth and confidence.</li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- Remote Support Technician at Baseline IT -->
-                <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-                  <div class="timeline-head px-4 pt-3">
-                    <div class="h5">Remote Support Technician<span class="text-muted h6"> at Baseline IT</span></div>
-                  </div>
-                  <div class="timeline-body px-4 pb-4">
-                    <div class="text-muted text-small mb-3">March, 2025 - Present</div>
-                    <ul>
-                      <li>Provided remote technical support to users, diagnosing and resolving a wide range of hardware, software, and connectivity issues.</li>
-                      <li>Worked extensively with Microsoft 365, Google Workspace, and Active Directory to assist with user account management, access control, troubleshooting, and general IT support tasks.</li>
-                      <li>Delivered comprehensive technical assistance while documenting solutions and maintaining accurate support records.</li>
-                      <li>Escalated complex technical problems to senior staff when necessary, ensuring timely and professional resolution while maintaining high levels of customer satisfaction.</li>
-                      <li>Applied strong adaptive troubleshooting skills to identify root causes, resolve issues efficiently, and provide users with clear guidance and preventative best practices.</li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- Site Based Technician at Baseline IT, assigned to Constantia Waldorf School -->
-                <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
-                  <div class="timeline-head px-4 pt-3">
-                    <div class="h5">Site Based Technician<span class="text-muted h6"> at Baseline IT, based at Constantia Waldorf School</span></div>
-                  </div>
-                  <div class="timeline-body px-4 pb-4">
-                    <div class="text-muted text-small mb-3">August, 2026 - Present</div>
-                    <ul>
-                      <li>Provide onsite technical support for staff and students, troubleshooting and resolving hardware, software, network, and connectivity issues.</li>
-                      <li>Administer and support Microsoft 365 and Google Workspace environments, including user account management, access control, troubleshooting, and security configuration.</li>
-                      <li>Manage and support Ed-Admin, serving as the primary technical contact for school administration systems and related technologies.</li>
-                      <li>Coordinate and manage third-party system integrations with Ed-Admin, acting as the main liaison between vendors and the school to ensure successful implementation and ongoing support.</li>
-                      <li>Collaborate with software providers and service partners to troubleshoot, test, and maintain integrations between educational and business platforms.</li>
-                      <li>Design and develop Power BI dashboards and reports to provide data-driven insights for operational and administrative decision-making.</li>
-                      <li>Assist with data management, reporting, and process improvement initiatives across multiple school systems.</li>
-                      <li>Support network infrastructure, printers, end-user devices, and audiovisual equipment to ensure reliable day-to-day operations.</li>
-                      <li>Maintain technical documentation, system configurations, and support procedures to improve knowledge sharing and service delivery.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Education Section -->
-          <div class="shadow-1-strong bg-white my-5 p-5" id="education">
-            <div class="education-section">
-              <h2 class="h2 fw-light mb-4">Education</h2>
-              <div class="timeline">
-                <!-- WeThinkCode_ -->
-                <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
-                  <div class="timeline-head px-4 pt-3">
-                    <div class="h5">National Certificate: Information Technology: Systems Development <span class="text-muted h6">from WeThinkCode_</span></div>
-                  </div>
-                  <div class="timeline-body px-4 pb-4">
-                    <div class="text-muted text-small mb-3">Cape Town, Western Cape | Graduation: October, 2022</div>
-                    <div>The NQF level 5 certificate was obtained after completing the WeThinkCode_ Software Engineering Programme and meeting the SETA criteria through continuous development and project showcases. All group projects were explained through video format as part of the assessment.</div>
-                  </div>
-                </div>
-                <!-- Grassy Park High School -->
-                <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
-                  <div class="timeline-head px-4 pt-3">
-                    <div class="h5">High School Diploma <span class="text-muted h6">from Grassy Park High School</span></div>
-                  </div>
-                  <div class="timeline-body px-4 pb-4">
-                    <div class="text-muted text-small mb-3">Cape Town, Western Cape | Graduation: December, 2019</div>
-                    <div>Completed a high school diploma at Grassy Park High School.</div>
-                  </div>
-                </div>
-                <!-- IBM -->
-                <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
-                  <div class="timeline-head px-4 pt-3">
-                    <div class="h5">Web Development Fundamentals <span class="text-muted h6">from IBM</span></div>
-                  </div>
-                  <div class="timeline-body px-4 pb-4">
-                    <div class="text-muted text-small mb-3">Remote | Graduation: May, 2023</div>
-                    <div>Completed IBM Web Development Fundamentals training, developing foundational knowledge of modern web development concepts.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project Experience Section -->
-          <div class="shadow-1-strong bg-white my-5 p-5" id="projects">
-            <div class="project-experience-section">
-              <h2 class="h2 fw-light mb-4">Project Experience</h2>
-              <div class="timeline">
-                <div class="timeline-card timeline-card-primary">
-                  <div class="timeline-head px-4 pt-3">
-                    <div class="h5">WeThinkCode_ and IBM <span class="text-muted h6">Singular Projects and Group Projects</span></div>
-                  </div>
-                  <div class="timeline-body px-4 pb-4">
-                    <div class="text-muted text-small mb-3">Cape Town, Western Cape | August, 2020 - October, 2022</div>
-                    <ul>
-                      <li>Collaborated with a team of five to build a text-based Java game that allows a user to connect to another user's randomly generated world filled with obstacles, mines, and pits, choose a class, and start playing by inputting each command via the list of commands printed when connecting to a world.</li>
-                      <li>Built a mobile application for the elderly to help maintain their health. Worked solely to timely deliver codebase in Dart and SQLite for offline storage while using APIs such as OpenCage for location information, TomTom for routing and navigation, Jitsi Meet for video calls, and Firebase for authentication, Firestore, and Storage.</li>
-                      <li>Developed a quick and easy home page that showcases the parallax effect background-attachment style.</li>
-                      <li>For my final project on the IBM SkillsBuild platform, built a web application that allows users to create tasks in a list format and mark them complete or delete them.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Leadership Experience Section -->
-          <div class="shadow-1-strong bg-white my-5 p-5" id="leadership">
-            <div class="leadership-section">
-              <h2 class="h2 fw-light mb-4">Leadership Experience</h2>
-              <div class="timeline">
-                <div class="timeline-card timeline-card-primary">
-                  <div class="timeline-head px-4 pt-3">
-                    <div class="h5">Team Lead <span class="text-muted h6">at WeThinkCode_</span></div>
-                  </div>
-                  <div class="timeline-body px-4 pb-4">
-                    <div class="text-muted text-small mb-3">Cape Town, South Africa | August, 2020 - October, 2023</div>
-                    <div>During my team project studies at WeThinkCode_, we were tasked to create an alternating team lead system where after each change in the iteration of the group project, the team lead would change. After managing my few weeks of leadership, I reorganized the team production structure and changed the file structure of the project, which led to a production increase of 20% and a 32% decrease in data handling errors.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Section -->
-          <div class="shadow-1-strong bg-white my-5 p-5" id="portfolio">
-            <div class="portfolio-section">
-              <h2 class="h2 fw-light mb-4">Portfolio</h2>
-              <!-- Project 1: WeThinkCode Projects -->
-              <div class="row g-0">
-                <div class="col-md-6">
-                  <a href="https://github.com/MuneerMiller/WeThinkCode-Projects.git" target="_blank" rel="noopener noreferrer">
-                    <img class="img-fluid" src="images/pHuuhgmu_400x400.jpg" alt="WeThinkCode Projects" width="800" height="500">
-                  </a>
-                </div>
-                <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-                  <div class="m-4 mt-md-2">
-                    <p class="text-teal text-small">Python / Java / Dart / JavaScript / SQLite</p>
-                    <h3>WeThinkCode projects</h3>
-                    <p class="text-muted">Completed WeThinkCode_ projects in a peer-to-peer learning environment. Became familiar with Agile methodology, the Software Development Life Cycle, and working in Agile development teams.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Project 2: Social Media Tracker -->
-              <div class="row g-0 portfolio-reverse">
-                <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-                  <div class="m-4 mt-md-2 text-end">
-                    <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript</p>
-                    <h3>Social Media Tracker - Light and Dark Mode</h3>
-                    <p class="text-muted">A web application that tracks your social media statistics. It includes light and dark mode features that auto-detect the user's default theme preferences.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <a href="https://github.com/MuneerMiller/WebApp.git" target="_blank" rel="noopener noreferrer">
-                    <img class="img-fluid" src="images/light_mode_pic.jpeg" alt="Social Media Tracker" width="800" height="500">
-                  </a>
-                </div>
-              </div>
-              <!-- Project 3: Elderly App -->
-              <div class="row g-0">
-                <div class="col-md-6">
-                  <a href="https://github.com/MuneerMiller/WeThinkCode-Projects/tree/main/elderly_app-master" target="_blank" rel="noopener noreferrer">
-                    <img class="img-fluid" src="images/Elderly_app.png" alt="Elderly App" width="800" height="500">
-                  </a>
-                </div>
-                <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-                  <div class="m-4 mt-md-2">
-                    <p class="text-teal text-small">Dart / Flutter / CSS / JavaScript / SQLite</p>
-                    <h3>Elderly App</h3>
-                    <p class="text-muted">Developed a mobile application for elderly users to help maintain their health. This project utilized Dart, SQLite, and integrated APIs like OpenCage for location, TomTom for routing, and Firebase for authentication and storage.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Project 4: TaskTidy - IBM Final Project -->
-              <div class="row g-0 portfolio-reverse">
-                <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-                  <div class="m-4 mt-md-2 text-end">
-                    <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript / jQuery</p>
-                    <h3>Home Sticky Slider Navigation</h3>
-                    <p class="text-muted">A sticky slider navigation bar that sticks to the top of the viewport when scrolling. It features smooth scrolling to content sections upon clicking tabs and dynamically highlights the active tab with a sliding indicator, ensuring an intuitive and responsive navigation experience for multi-section pages.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <a href="https://github.com/MuneerMiller/Responsive-Home-Sticky-Slider-Navigation.git" target="_blank" rel="noopener noreferrer">
-                    <img class="img-fluid" src="images/Sticky screenshot.png" alt="Social Media Tracker" width="800" height="500">
-                  </a>
-                </div>
-              </div>
-               
-              <!-- <div class="row g-0">
-                <div class="col-md-6">
-                  <a href="https://github.com/MuneerMiller/Personal-Projects.git" target="_blank">
-                    <img class="img-fluid" src="images/Personal Projects.webp" alt="Personal Projects" width="800" height="500">
-                  </a>
-                </div>
-                <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-                  <div class="m-4 mt-md-2">
-                    <p class="text-teal text-small">JavaScript / HTML / CSS / JavaScript / SQL / Express / Node.js / React.js / Python</p>
-                    <h3>Personal Projects</h3>
-                    <p class="text-muted">Personal-Projects is a collection of my web development and software projects, showcasing skills in HTML, CSS, JavaScript, Python, and more. These projects highlight my passion for coding, continuous learning, and problem-solving. Explore the repo to see my approach to development across various technologies.</p>
-                  </div>
-                </div>
-              </div> -->
-            </div>
-          </div>
-
-
-          <!-- Contact Section -->
-          <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
-            <div class="contact-section">
-              <h2 class="h2 fw-light mb-4">Contact</h2>
-              <div class="row mb-4">
-                <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
-                  <div class="mt-1">
-                    <div class="h6"><i class="fas fa-phone pe-2 text-muted"></i> +27 67 132 4695</div>
-                    <div class="h6"><i class="far fa-envelope pe-2 text-muted"></i> muneermilleror@gmail.com</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </div>
+        <div class="container">
+          <dl class="facts">
+            <div><dt>Current role</dt><dd>Site Based Technician, Baseline IT</dd></div>
+            <div><dt>Qualification</dt><dd>NQF 5 IT: Systems Development</dd></div>
+            <div><dt>Works with</dt><dd>M365 · Google Workspace · Power BI</dd></div>
+            <div><dt>Codes in</dt><dd>Python · Java · JavaScript · SQL</dd></div>
+          </dl>
+        </div>
+      </section>
 
-    <!-- Footer -->
-    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-      <div class="container">
-        <div class="my-3">
-          <div class="h4">Mogamat Muneer Miller</div>
-          <div class="footer-nav">
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/MuneerMiller"><i class="fab fa-github"></i></a></li>
-                <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/muneer-miller"><i class="fab fa-linkedin"></i></a></li>
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container section-grid">
+          <header class="section-head">
+            <span class="section-num">01</span>
+            <h2>About</h2>
+          </header>
+          <div class="section-body about-grid">
+            <div class="reveal">
+              <p class="lead">A motivated, adaptable technology professional with a background in software and web development and day-to-day experience in technical support.</p>
+              <p>I'm skilled in Python, Java, JavaScript, HTML, CSS and SQL, with a solid understanding of backend development and the Software Development Life Cycle. In support roles I work with Microsoft 365, Active Directory, Microsoft Azure and remote support tools in fast-paced environments, using careful troubleshooting to find root causes and fix them properly.</p>
+            </div>
+            <ul class="details reveal">
+              <li><i class="far fa-envelope" aria-hidden="true"></i><span><small>Email</small><a href="mailto:muneermilleror@gmail.com">muneermilleror@gmail.com</a></span></li>
+              <li><i class="fas fa-phone" aria-hidden="true"></i><span><small>Phone</small><a href="tel:+27671324695">+27 67 132 4695</a></span></li>
+              <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span><small>Location</small>Cape Town, Western Cape</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="container section-grid">
+          <header class="section-head">
+            <span class="section-num">02</span>
+            <h2>Skills</h2>
+          </header>
+          <div class="section-body skills-grid">
+            <div class="skill-group reveal">
+              <h3><i class="fas fa-network-wired" aria-hidden="true"></i> IT Systems &amp; Support</h3>
+              <ul class="chips">
+                <li>Microsoft 365</li>
+                <li>Google Workspace</li>
+                <li>Active Directory</li>
+                <li>Microsoft Azure</li>
+                <li>Ed-Admin</li>
+                <li>Power BI</li>
+                <li>Networking &amp; printers</li>
+                <li>AV equipment</li>
+                <li>Remote support</li>
               </ul>
-            </nav>
+            </div>
+            <div class="skill-group reveal">
+              <h3><i class="fas fa-server" aria-hidden="true"></i> Backend</h3>
+              <ul class="chips">
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>API development</li>
+              </ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3><i class="fas fa-desktop" aria-hidden="true"></i> Frontend &amp; Mobile</h3>
+              <ul class="chips">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React.js <em>(familiar)</em></li>
+                <li>Dart / Flutter</li>
+                <li>SQLite</li>
+                <li>Firebase</li>
+              </ul>
+            </div>
           </div>
         </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience">
+        <div class="container section-grid">
+          <header class="section-head">
+            <span class="section-num">03</span>
+            <h2>Experience</h2>
+          </header>
+          <div class="section-body">
+            <ol class="timeline">
+              <li class="tl-item reveal">
+                <div class="tl-meta">
+                  <span class="tl-date">Aug 2026 – Present</span>
+                  <span class="badge">Current</span>
+                </div>
+                <div class="tl-content">
+                  <h3>Site Based Technician</h3>
+                  <p class="tl-org">Baseline IT · placed at Constantia Waldorf School</p>
+                  <ul>
+                    <li>Provide onsite technical support for staff and students, resolving hardware, software, network and connectivity issues.</li>
+                    <li>Administer Microsoft 365 and Google Workspace, including user accounts, access control, troubleshooting and security configuration.</li>
+                    <li>Act as the primary technical contact for Ed-Admin, the school's administration system.</li>
+                    <li>Coordinate third-party integrations with Ed-Admin as the main liaison between vendors and the school, from implementation through ongoing support.</li>
+                    <li>Work with software providers and service partners to troubleshoot, test and maintain integrations between educational and business platforms.</li>
+                    <li>Design and build Power BI dashboards and reports that give administration data-driven insight for operational decisions.</li>
+                    <li>Support data management, reporting and process improvement across multiple school systems.</li>
+                    <li>Look after network infrastructure, printers, end-user devices and audiovisual equipment for reliable day-to-day operations.</li>
+                    <li>Maintain technical documentation, system configurations and support procedures to improve knowledge sharing.</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tl-item reveal">
+                <div class="tl-meta">
+                  <span class="tl-date">Mar 2025 – Present</span>
+                </div>
+                <div class="tl-content">
+                  <h3>Remote Support Technician</h3>
+                  <p class="tl-org">Baseline IT</p>
+                  <ul>
+                    <li>Diagnose and resolve a wide range of hardware, software and connectivity issues for users remotely.</li>
+                    <li>Work extensively with Microsoft 365, Google Workspace and Active Directory on account management, access control and general IT support.</li>
+                    <li>Document solutions and keep accurate support records.</li>
+                    <li>Escalate complex problems to senior staff when needed, keeping resolution timely and customer satisfaction high.</li>
+                    <li>Identify root causes and give users clear guidance and preventative best practices.</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tl-item reveal">
+                <div class="tl-meta">
+                  <span class="tl-date">Jul 2023 – Oct 2024</span>
+                </div>
+                <div class="tl-content">
+                  <h3>Learning Specialist</h3>
+                  <p class="tl-org">2U, Inc.</p>
+                  <ul>
+                    <li>Tutored full-stack web development remotely (Node.js, React.js, SQL and MongoDB), helping students with homework, class exercises and projects.</li>
+                    <li>Guided students through problem-solving with clear explanations and worked solutions.</li>
+                    <li>Graded assignments within a 24–48 hour turnaround.</li>
+                    <li>Supported boot camp students with technical skills and study strategies, building their confidence.</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tl-item reveal">
+                <div class="tl-meta">
+                  <span class="tl-date">Jun 2022 – Oct 2022</span>
+                </div>
+                <div class="tl-content">
+                  <h3>Junior Software Developer</h3>
+                  <p class="tl-org">Home Assist Technologies</p>
+                  <ul>
+                    <li>Worked with cross-functional teams to identify and prioritise new web application features, contributing to a 20% increase in user engagement.</li>
+                    <li>Developed and implemented software testing strategies that substantially reduced post-release bugs.</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tl-item reveal">
+                <div class="tl-meta">
+                  <span class="tl-date">Aug 2020 – Oct 2023</span>
+                </div>
+                <div class="tl-content">
+                  <h3>Team Lead <span class="tag">Leadership</span></h3>
+                  <p class="tl-org">WeThinkCode_</p>
+                  <p>Our group projects used a rotating team lead after each iteration. During my turn I reorganised the team's production structure and the project's file structure, which led to a 20% increase in output and a 32% drop in data handling errors.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section" id="education">
+        <div class="container section-grid">
+          <header class="section-head">
+            <span class="section-num">04</span>
+            <h2>Education</h2>
+          </header>
+          <div class="section-body edu-grid">
+            <article class="card edu reveal">
+              <span class="edu-year">2023</span>
+              <h3>Web Development Fundamentals</h3>
+              <p class="tl-org">IBM SkillsBuild · Remote</p>
+              <p>Foundational training in modern web development concepts, finished with a task manager web app as the final project.</p>
+            </article>
+            <article class="card edu reveal">
+              <span class="edu-year">2022</span>
+              <h3>National Certificate: IT Systems Development <span class="tag">NQF 5</span></h3>
+              <p class="tl-org">WeThinkCode_ · Cape Town</p>
+              <p>Awarded after completing the WeThinkCode_ Software Engineering Programme and meeting SETA criteria through continuous development and project showcases, with group projects presented on video for assessment.</p>
+            </article>
+            <article class="card edu reveal">
+              <span class="edu-year">2019</span>
+              <h3>High School Diploma</h3>
+              <p class="tl-org">Grassy Park High School · Cape Town</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="section" id="portfolio">
+        <div class="container section-grid">
+          <header class="section-head">
+            <span class="section-num">05</span>
+            <h2>Portfolio</h2>
+          </header>
+          <div class="section-body">
+            <div class="projects">
+              <article class="project reveal">
+                <a class="project-media media-contain" href="https://github.com/MuneerMiller/WeThinkCode-Projects" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                  <img src="images/pHuuhgmu_400x400.jpg" width="387" height="387" alt="WeThinkCode_ logo" loading="lazy">
+                </a>
+                <div class="project-body">
+                  <p class="project-stack">Python · Java · Dart · JavaScript · SQLite</p>
+                  <h3><a href="https://github.com/MuneerMiller/WeThinkCode-Projects" target="_blank" rel="noopener noreferrer">WeThinkCode_ projects</a></h3>
+                  <p>Peer-to-peer coursework, including a team-built text-based Java game where players join each other's randomly generated worlds of obstacles, mines and pits. Built habits around Agile teams and the SDLC.</p>
+                </div>
+              </article>
+              <article class="project reveal">
+                <a class="project-media" href="https://github.com/MuneerMiller/WeThinkCode-Projects/tree/main/elderly_app-master" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                  <img class="pos-top" src="images/Elderly_app.png" width="1080" height="1920" alt="Screens from the Elderly App" loading="lazy">
+                </a>
+                <div class="project-body">
+                  <p class="project-stack">Dart · Flutter · SQLite · Firebase</p>
+                  <h3><a href="https://github.com/MuneerMiller/WeThinkCode-Projects/tree/main/elderly_app-master" target="_blank" rel="noopener noreferrer">Elderly App</a></h3>
+                  <p>A solo-built mobile app that helps elderly users look after their health, with offline SQLite storage plus OpenCage, TomTom, Jitsi Meet and Firebase integrations.</p>
+                </div>
+              </article>
+              <article class="project reveal">
+                <a class="project-media" href="https://github.com/MuneerMiller/WebApp" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                  <img src="images/light_mode_pic.jpeg" width="800" height="449" alt="Social media tracker dashboard in light mode" loading="lazy">
+                </a>
+                <div class="project-body">
+                  <p class="project-stack">HTML · CSS · JavaScript</p>
+                  <h3><a href="https://github.com/MuneerMiller/WebApp" target="_blank" rel="noopener noreferrer">Social Media Tracker</a></h3>
+                  <p>A dashboard for social media statistics with light and dark themes that follow the user's system preference.</p>
+                </div>
+              </article>
+              <article class="project reveal">
+                <a class="project-media" href="https://github.com/MuneerMiller/Responsive-Home-Sticky-Slider-Navigation" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                  <img src="images/Sticky%20screenshot.png" width="1366" height="768" alt="Sticky slider navigation bar" loading="lazy">
+                </a>
+                <div class="project-body">
+                  <p class="project-stack">HTML · CSS · JavaScript · jQuery</p>
+                  <h3><a href="https://github.com/MuneerMiller/Responsive-Home-Sticky-Slider-Navigation" target="_blank" rel="noopener noreferrer">Sticky Slider Navigation</a></h3>
+                  <p>A navigation bar that sticks to the top on scroll, smooth-scrolls to sections and slides an indicator under the active tab.</p>
+                </div>
+              </article>
+            </div>
+            <p class="more-link reveal"><a href="https://github.com/MuneerMiller" target="_blank" rel="noopener noreferrer">More on GitHub <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact-card reveal">
+            <span class="section-num">06</span>
+            <h2>Let's work together</h2>
+            <p>Looking for someone to support your users and systems, or to help build something? I'd be glad to hear from you.</p>
+            <div class="contact-actions">
+              <a class="btn btn-light" href="mailto:muneermilleror@gmail.com"><i class="far fa-envelope" aria-hidden="true"></i> muneermilleror@gmail.com</a>
+              <a class="btn btn-outline-light" href="tel:+27671324695"><i class="fas fa-phone" aria-hidden="true"></i> +27 67 132 4695</a>
+              <a class="btn btn-outline-light" href="https://www.linkedin.com/in/muneer-miller" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year">2026</span> Mogamat Muneer Miller</span>
+        <a href="#top">Back to top <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
       </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="scripts/mdb.min.js?ver=1.2.1"></script>
-    <script src="scripts/aos.js?ver=1.2.1"></script>
-    <script src="scripts/main.js?ver=1.2.1"></script>
+    <script src="scripts/main.js?ver=2.0.0"></script>
   </body>
 </html>
