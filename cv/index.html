@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mogamat Muneer Miller CV</title>
+    <!-- Source for "Mogamat Muneer Miller CV.pdf". Print to A4 PDF with background graphics on and no margins. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+      @page {
+        size: A4;
+        margin: 14mm 16mm;
+      }
+
+      :root {
+        --ink: #1b1f1d;
+        --muted: #4f5753;
+        --line: #d9dcd8;
+        --accent: #0f766e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        background: #fff;
+        color: var(--ink);
+        font-family: 'Inter', Arial, Helvetica, sans-serif;
+        font-size: 9.6pt;
+        line-height: 1.42;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      @media screen {
+        body {
+          background: #ecebe6;
+          padding: 24px 0;
+        }
+
+        .page {
+          width: 210mm;
+          margin: 0 auto;
+          padding: 14mm 16mm;
+          background: #fff;
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        }
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      ul {
+        margin: 0;
+      }
+
+      /* Header */
+      header {
+        padding-bottom: 10pt;
+        border-bottom: 2pt solid var(--accent);
+      }
+
+      h1 {
+        font-size: 22pt;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+
+      .title {
+        margin-top: 3pt;
+        color: var(--accent);
+        font-size: 11pt;
+        font-weight: 600;
+      }
+
+      .contact {
+        margin-top: 7pt;
+        color: var(--muted);
+        font-size: 8.8pt;
+        line-height: 1.6;
+      }
+
+      .contact span {
+        margin: 0 4pt;
+        color: var(--line);
+      }
+
+      /* Sections */
+      section {
+        margin-top: 12pt;
+      }
+
+      h2 {
+        margin-bottom: 6pt;
+        padding-bottom: 3pt;
+        border-bottom: 0.75pt solid var(--line);
+        color: var(--accent);
+        font-size: 9pt;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .summary {
+        color: var(--ink);
+      }
+
+      /* Skills */
+      .skills p {
+        color: var(--muted);
+      }
+
+      .skills p + p {
+        margin-top: 3pt;
+      }
+
+      .skills strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      /* Entries */
+      .entry {
+        break-inside: avoid;
+      }
+
+      .entry + .entry {
+        margin-top: 9pt;
+      }
+
+      .entry-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12pt;
+      }
+
+      h3 {
+        font-size: 10pt;
+        font-weight: 600;
+      }
+
+      .org {
+        color: var(--muted);
+        font-weight: 400;
+      }
+
+      .date {
+        flex: none;
+        color: var(--muted);
+        font-size: 8.8pt;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .role + .role {
+        margin-top: 7pt;
+      }
+
+      .company {
+        margin-bottom: 4pt;
+        font-size: 10.5pt;
+        font-weight: 700;
+      }
+
+      .company span {
+        color: var(--muted);
+        font-size: 9pt;
+        font-weight: 400;
+      }
+
+      ul {
+        margin-top: 3pt;
+        padding-left: 12pt;
+      }
+
+      li {
+        margin-top: 1.5pt;
+        padding-left: 2pt;
+      }
+
+      li::marker {
+        color: var(--accent);
+      }
+
+      .entry p {
+        margin-top: 2pt;
+        color: var(--ink);
+      }
+
+      .stack {
+        color: var(--accent);
+        font-size: 8.6pt;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Mogamat Muneer Miller</h1>
+        <p class="title">IT Support Technician &amp; Software Developer</p>
+        <p class="contact">Cape Town, South Africa <span>|</span> <a href="tel:+27671324695">+27 67 132 4695</a> <span>|</span> <a href="mailto:muneermilleror@gmail.com">muneermilleror@gmail.com</a><br><a href="https://www.linkedin.com/in/muneer-miller">linkedin.com/in/muneer-miller</a> <span>|</span> <a href="https://github.com/MuneerMiller">github.com/MuneerMiller</a> <span>|</span> <a href="https://muneermiller.github.io/">muneermiller.github.io</a></p>
+      </header>
+
+      <section>
+        <h2>Profile</h2>
+        <p class="summary">IT technician and software developer with hands-on experience supporting users and systems across Microsoft 365, Google Workspace and Active Directory, on-site and remotely. Currently the primary technical contact for a school's administration systems, managing vendor integrations and building Power BI reporting. Background in full-stack development (Python, Java, JavaScript, SQL) from WeThinkCode_ and over a year tutoring full-stack web development, with a methodical approach to troubleshooting and clear communication with non-technical users.</p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skills">
+          <p><strong>IT &amp; Systems:</strong> Microsoft 365, Google Workspace, Active Directory, Microsoft Azure, Ed-Admin, user and access management, networking, printers, end-user devices, AV equipment, remote support tools</p>
+          <p><strong>Data &amp; Reporting:</strong> Power BI dashboards and reports, SQL, MySQL, PostgreSQL, SQLite, data management</p>
+          <p><strong>Development:</strong> Python, Java, JavaScript, C#, Node.js, Express.js, React.js, HTML, CSS, Dart/Flutter, REST APIs, CRUD, Git/GitHub</p>
+          <p><strong>Ways of working:</strong> SDLC, Agile teams, technical documentation, vendor liaison, AI-assisted research and documentation</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <div class="entry">
+          <p class="company">Baseline IT <span>· Cape Town</span></p>
+          <div class="role">
+            <div class="entry-head">
+              <h3>Site Based Technician <span class="org">· Constantia Waldorf School</span></h3>
+              <span class="date">Aug 2026 – Present</span>
+            </div>
+            <ul>
+              <li>Provide on-site support for staff and students, resolving hardware, software, network and connectivity issues.</li>
+              <li>Administer Microsoft 365 and Google Workspace: user accounts, access control, email troubleshooting and security configuration.</li>
+              <li>Serve as the primary technical contact for Ed-Admin, the school's administration system, and act as liaison between vendors and the school for third-party integrations, from implementation through ongoing support.</li>
+              <li>Work with software providers to troubleshoot, test and maintain integrations between educational and business platforms.</li>
+              <li>Design and build Power BI dashboards and reports that give administration data-driven insight for operational decisions.</li>
+              <li>Support data management, reporting and process improvement across multiple school systems.</li>
+              <li>Maintain network infrastructure, printers, end-user devices and audiovisual equipment, plus technical documentation and support procedures.</li>
+            </ul>
+          </div>
+          <div class="role">
+            <div class="entry-head">
+              <h3>Remote Support Technician</h3>
+              <span class="date">Mar 2025 – Present</span>
+            </div>
+            <ul>
+              <li>Diagnose and resolve a wide range of hardware, software and connectivity issues for users remotely.</li>
+              <li>Manage user accounts, access control and general support across Microsoft 365, Google Workspace and Active Directory.</li>
+              <li>Document solutions and keep accurate support records for efficient issue tracking and resolution.</li>
+              <li>Identify root causes, escalate complex problems to senior staff when needed and give users clear preventative guidance, maintaining high customer satisfaction.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Learning Specialist <span class="org">· 2U, Inc. (remote)</span></h3>
+            <span class="date">Jul 2023 – Oct 2024</span>
+          </div>
+          <ul>
+            <li>Tutored boot camp students in full-stack web development (Node.js, React.js, SQL, MongoDB) across homework, class exercises and projects.</li>
+            <li>Broke down complex problems with clear explanations, building students' technical skills and confidence.</li>
+            <li>Graded assignments within a 24–48 hour turnaround.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Junior Software Developer <span class="org">· Home Assist Technologies</span></h3>
+            <span class="date">Jun 2022 – Oct 2022</span>
+          </div>
+          <ul>
+            <li>Worked with cross-functional teams to identify and prioritise new web application features, contributing to a 20% increase in user engagement.</li>
+            <li>Developed and implemented software testing strategies that substantially reduced post-release bugs.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Elderly Care mobile app <span class="org">· WeThinkCode_ final project</span></h3>
+            <span class="stack">Dart · Flutter · SQLite · Firebase</span>
+          </div>
+          <p>Solo-built app helping elderly users look after their health, with offline SQLite storage and OpenCage (location), TomTom (routing), Jitsi Meet (video calls) and Firebase (auth, Firestore, storage) integrations.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Multiplayer text-based robot world <span class="org">· WeThinkCode_ team project</span></h3>
+            <span class="stack">Java</span>
+          </div>
+          <p>Built with a team of five: players connect to each other's randomly generated worlds of obstacles, mines and pits, choose a class and play through a command interface.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Web projects <span class="org">· IBM SkillsBuild and personal</span></h3>
+            <span class="stack">HTML · CSS · JavaScript</span>
+          </div>
+          <p>Task manager web app (IBM final project), a social media dashboard with automatic light and dark themes, and a sticky sliding navigation component. Source at github.com/MuneerMiller.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>National Certificate: IT Systems Development (NQF 5) <span class="org">· WeThinkCode_</span></h3>
+            <span class="date">Aug 2020 – Oct 2022</span>
+          </div>
+          <p>Peer-led software engineering programme in Agile teams. As rotating team lead, reorganised the team's production and project file structure, raising output by 20% and cutting data handling errors by 32%.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Web Development Fundamentals <span class="org">· IBM SkillsBuild</span></h3>
+            <span class="date">May 2023</span>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>High School Diploma <span class="org">· Grassy Park High School</span></h3>
+            <span class="date">Dec 2019</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
