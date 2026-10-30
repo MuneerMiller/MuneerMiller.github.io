@@ -303,7 +303,108 @@ ul, ol {
 
 /* ===== Hero ===== */
 .hero {
+  position: relative;
   padding: 72px 0 40px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  top: -20%;
+  right: -10%;
+  width: 60%;
+  height: 90%;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 16%, transparent), transparent);
+  pointer-events: none;
+}
+
+.hero-canvas {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse 45% 75% at 82% 42%, #000 25%, transparent 70%);
+          mask-image: radial-gradient(ellipse 45% 75% at 82% 42%, #000 25%, transparent 70%);
+}
+
+/* Staggered entrance */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+.hero-text > *,
+.hero-photo,
+.facts {
+  animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.hero-text > :nth-child(2) { animation-delay: 0.06s; }
+.hero-text > :nth-child(3) { animation-delay: 0.14s; }
+.hero-text > :nth-child(4) { animation-delay: 0.2s; }
+.hero-text > :nth-child(5) { animation-delay: 0.26s; }
+.hero-text > :nth-child(6) { animation-delay: 0.32s; }
+.hero-photo { animation-delay: 0.18s; }
+.facts { animation-delay: 0.4s; }
+
+.status-card {
+  position: absolute;
+  left: -28px;
+  bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 250px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.status-card small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.status-dot {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  flex: none;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.status-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: ping 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
 }
 
 .hero-grid {
@@ -570,11 +671,18 @@ ul, ol {
 }
 
 .chips li {
-  padding: 6px 12px;
+  padding: 5px 11px;
+  border: 1px solid transparent;
   border-radius: 8px;
   background: var(--surface-2);
+  transition: border-color 0.2s, background-color 0.2s;
   font-size: 0.875rem;
   font-weight: 500;
+}
+
+.chips li:hover {
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  background: var(--accent-soft);
 }
 
 .chips em {
@@ -913,17 +1021,44 @@ ul, ol {
   *::before,
   *::after {
     transition: none !important;
+    animation: none !important;
   }
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 960px) {
-  .site-nav {
-    display: none;
+  :root {
+    --header-h: 108px;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 0 16px;
+    height: auto;
+    padding-top: 10px;
   }
 
   .theme-toggle {
     margin-left: auto;
+  }
+
+  .site-nav {
+    order: 3;
+    width: 100%;
+    margin-top: 6px;
+    padding-bottom: 8px;
+    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
+            mask-image: linear-gradient(to right, #000 85%, transparent);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav a {
+    white-space: nowrap;
   }
 
   .section-grid {
@@ -975,6 +1110,20 @@ ul, ol {
 
   .hero-photo img {
     border-radius: 18px;
+  }
+
+  .hero-canvas {
+    -webkit-mask-image: radial-gradient(ellipse 80% 30% at 50% 12%, #000 20%, transparent 75%);
+            mask-image: radial-gradient(ellipse 80% 30% at 50% 12%, #000 20%, transparent 75%);
+  }
+
+  .status-card {
+    left: calc(100% + 12px);
+    bottom: 12px;
+    width: max-content;
+    max-width: 150px;
+    padding: 10px 12px;
+    font-size: 0.78rem;
   }
 
   .hero-actions .btn {
@@ -1062,6 +1211,8 @@ ul, ol {
 
   .site-header,
   .skip-link,
+  .hero-canvas,
+  .status-card,
   .hero-actions,
   .hero-social,
   .hero-photo,
@@ -1075,6 +1226,15 @@ ul, ol {
   .js-reveal .reveal {
     opacity: 1;
     transform: none;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .hero-text > *,
+  .facts {
+    animation: none;
   }
 
   .hero,
