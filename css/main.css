@@ -935,6 +935,28 @@ ul, ol {
   font-weight: 600;
 }
 
+.project-media.media-strip {
+  aspect-ratio: 2000 / 881;
+  background: #1f2a1b;
+}
+
+.gallery img.pos-play {
+  object-position: center 62%;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.btn-sm {
+  min-height: 44px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+}
+
 /* Lightbox */
 .lightbox {
   max-width: min(1200px, 94vw);
@@ -1376,6 +1398,7 @@ ul, ol {
   .project-media,
   .gallery,
   .lightbox,
+  .project-actions,
   .more-link,
   .contact-actions,
   .site-footer {
