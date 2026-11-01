@@ -290,6 +290,39 @@
             <h2>Portfolio</h2>
           </header>
           <div class="section-body">
+            <article class="project project-featured reveal">
+              <a class="project-media featured-media" href="images/elderly-care-banner.webp" data-lightbox aria-label="View the Elderly Care overview image full size">
+                <img src="images/elderly-care-banner.webp" srcset="images/elderly-care-banner-thumb.webp 720w, images/elderly-care-banner.webp 2000w" sizes="(max-width: 960px) 100vw, 850px" width="2000" height="1050" alt="Elderly Care app on three phones: medicine check, home screen with SOS button, and medical ID" loading="lazy">
+              </a>
+              <div class="project-body featured-body">
+                <div class="featured-text">
+                  <p class="project-stack">Flutter · Dart · Android · iOS · Web</p>
+                  <h3><a href="https://github.com/MuneerMiller/WeThinkCode-Projects/tree/main/elderly_app-master" target="_blank" rel="noopener noreferrer">Elderly Care</a> <span class="tag">Featured</span></h3>
+                  <p>A health companion for older people. It started as my solo WeThinkCode_ final project, and I've since rebuilt and redesigned it from the ground up so it runs on Android, iOS and the web from one codebase.</p>
+                  <ul class="feature-list">
+                    <li>One-tap SOS to call for help or alert family</li>
+                    <li>Medicine reminders and checks, with read-aloud</li>
+                    <li>Blood pressure tracker with a readings chart</li>
+                    <li>Medical ID, nearby hospitals and a PIN or fingerprint lock</li>
+                  </ul>
+                  <ul class="chips">
+                    <li>AES-256 encrypted</li>
+                    <li>Accessible design</li>
+                    <li>79 automated tests</li>
+                  </ul>
+                </div>
+                <div class="gallery">
+                  <a href="images/elderly-care-features.webp" data-lightbox data-caption="Key features: home and SOS, medicine check, health tracker, medical ID, hospitals nearby, PIN lock">
+                    <img src="images/elderly-care-features-thumb.webp" width="720" height="786" alt="Six Elderly Care screens: home and SOS, medicine check, health tracker, medical ID, hospitals nearby and PIN lock" loading="lazy">
+                    <span>Key features</span>
+                  </a>
+                  <a href="images/elderly-care-web.webp" data-lightbox data-caption="Elderly Care running in a web browser">
+                    <img src="images/elderly-care-web-thumb.webp" width="720" height="505" alt="Elderly Care home screen in a desktop web browser" loading="lazy">
+                    <span>Web version</span>
+                  </a>
+                </div>
+              </div>
+            </article>
             <div class="projects">
               <article class="project reveal">
                 <a class="project-media media-contain" href="https://github.com/MuneerMiller/WeThinkCode-Projects" target="_blank" rel="noopener noreferrer" tabindex="-1">
@@ -299,16 +332,6 @@
                   <p class="project-stack">Python · Java · Dart · JavaScript · SQLite</p>
                   <h3><a href="https://github.com/MuneerMiller/WeThinkCode-Projects" target="_blank" rel="noopener noreferrer">WeThinkCode_ projects</a></h3>
                   <p>Peer-to-peer coursework, including a team-built text-based Java game where players join each other's randomly generated worlds of obstacles, mines and pits. Built habits around Agile teams and the SDLC.</p>
-                </div>
-              </article>
-              <article class="project reveal">
-                <a class="project-media" href="https://github.com/MuneerMiller/WeThinkCode-Projects/tree/main/elderly_app-master" target="_blank" rel="noopener noreferrer" tabindex="-1">
-                  <img class="pos-top" src="images/Elderly_app.png" width="1080" height="1920" alt="Screens from the Elderly App" loading="lazy">
-                </a>
-                <div class="project-body">
-                  <p class="project-stack">Dart · Flutter · SQLite · Firebase</p>
-                  <h3><a href="https://github.com/MuneerMiller/WeThinkCode-Projects/tree/main/elderly_app-master" target="_blank" rel="noopener noreferrer">Elderly App</a></h3>
-                  <p>A solo-built mobile app that helps elderly users look after their health, with offline SQLite storage plus OpenCage, TomTom, Jitsi Meet and Firebase integrations.</p>
                 </div>
               </article>
               <article class="project reveal">
@@ -353,6 +376,12 @@
         </div>
       </section>
     </main>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+      <button class="lightbox-close" type="button" aria-label="Close"><i class="fas fa-times" aria-hidden="true"></i></button>
+      <img src="" alt="">
+      <p class="lightbox-caption"></p>
+    </dialog>
 
     <footer class="site-footer">
       <div class="container footer-inner">
