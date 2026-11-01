@@ -54,6 +54,31 @@ if ('IntersectionObserver' in window) {
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// ===== Image lightbox (links still open the image directly without JS) =====
+const lightbox = document.getElementById('lightbox');
+
+if (lightbox && lightbox.showModal) {
+  const lightboxImg = lightbox.querySelector('img');
+  const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+
+  document.querySelectorAll('[data-lightbox]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const thumb = link.querySelector('img');
+      lightboxImg.src = link.getAttribute('href');
+      lightboxImg.alt = thumb ? thumb.alt : '';
+      lightboxCaption.textContent = link.dataset.caption || (thumb ? thumb.alt : '');
+      lightbox.showModal();
+    });
+  });
+
+  lightbox.querySelector('.lightbox-close').addEventListener('click', () => lightbox.close());
+  // Clicking the dark backdrop closes it too
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) lightbox.close();
+  });
+}
+
 // ===== Hero network backdrop =====
 (() => {
   const canvas = document.getElementById('hero-canvas');
