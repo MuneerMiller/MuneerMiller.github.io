@@ -1,3 +1,22 @@
+/*!
+ * Mogamat Muneer Miller — personal website and CV
+ * Copyright (c) 2026 Mogamat Muneer Miller. All rights reserved.
+ * Source-available for viewing only. Copying or reuse without written
+ * permission is prohibited. See the LICENCE file.
+ * https://muneermiller.github.io
+ */
+
+// A quiet credit + notice in the browser console.
+(function () {
+  try {
+    var t = 'color:#0f766e;font-size:16px;font-weight:700';
+    var s = 'color:#5d6662;font-size:12px';
+    console.log('%c© 2026 Mogamat Muneer Miller', t);
+    console.log('%cThis website and its code are source-available for viewing only. '
+      + 'Copying or reuse without permission is not allowed. See the LICENCE.', s);
+  } catch (e) {}
+})();
+
 // ===== Theme toggle =====
 const root = document.documentElement;
 const themeToggle = document.getElementById('theme-toggle');
